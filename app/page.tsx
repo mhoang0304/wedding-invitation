@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="relative max-w-3xl pt-10 mx-auto bg-[#f0f1ec] px-4">
+    <div className="relative max-w-3xl pt-10 mx-auto bg-[#f0f1ec]">
       <div className="text-center font-bold text-4xl text-[#800020] mb-5">
         Nhà có hỷ
       </div>
@@ -23,7 +23,7 @@ export default function Home() {
           width={150}
         />
 
-        <div className="flex flex-col gap-1 items-center">
+        <div className="flex absolute z-[1px] flex-col gap-1 items-center">
           <div className="text-xl">Chủ Nhật - 11h30</div>
           <div className="text-2xl text-[#5A0F1B] font-semibold">
             21.12.2025
@@ -31,7 +31,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="relative h-[750px] mb-15 mx-10">
+      <div className="relative h-[750px] mb-15">
         <Image
           src="/banner.jpeg"
           alt="banner"
@@ -87,7 +87,7 @@ export default function Home() {
 
       <MasonryLayout />
 
-      <div className="mt-20 flex gap-8 justify-center">
+      <div className="mt-20 md:flex-row flex flex-col gap-8 justify-center">
         <div>
           <div className="text-center text-lg mb-1">Nhà trai</div>
           <iframe
