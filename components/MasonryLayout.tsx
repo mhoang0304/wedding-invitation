@@ -1,60 +1,10 @@
+import { leftImage, rightImage } from "@/helpers/constant";
 import Image from "next/image";
 
 const MasonryLayout = () => {
-  const leftImage = [
-    {
-      id: 1,
-      src: "/image1.jpg",
-      height: 365,
-    },
-    {
-      id: 2,
-      src: "/image2.jpg",
-      height: 350,
-    },
-    {
-      id: 3,
-      src: "/image3.jpg",
-      height: 350,
-    },
-    {
-      id: 4,
-      src: "/image4.jpg",
-      height: 360,
-    },
-  ];
-
-  const rightImage = [
-    {
-      id: 5,
-      src: "/image5.jpg",
-      height: 260,
-    },
-    {
-      id: 6,
-      src: "/image6.jpg",
-      height: 280,
-    },
-    {
-      id: 7,
-      src: "/image7.jpg",
-      height: 300,
-    },
-    {
-      id: 8,
-      src: "/image8.jpg",
-      height: 280,
-    },
-    {
-      id: 9,
-      src: "/image2.jpg",
-      height: 300,
-    },
-  ];
-
   return (
     <div>
-      <div className="grid grid-cols-7 gap-1.5">
+      <div className="grid grid-cols-7 gap-x-1.5">
         <div className="col-span-4">
           {leftImage.map((image) => (
             <div
@@ -88,9 +38,65 @@ const MasonryLayout = () => {
             </div>
           ))}
         </div>
-      </div>
 
-      <div></div>
+        <div className="col-span-7">
+          <div className="relative h-60 mb-1.5">
+            <Image
+              src="/image10.jpg"
+              alt="image"
+              className="object-cover"
+              fill={true}
+            />
+          </div>
+
+          <div className="flex gap-1.5 mb-1.5">
+            <div className="relative h-32 w-full">
+              <Image
+                src="/image12.jpg"
+                alt="image"
+                className="object-cover"
+                fill={true}
+              />
+            </div>
+            <div className="relative h-32 w-full">
+              <Image
+                src="/image13.jpg"
+                alt="image"
+                className="object-cover"
+                fill={true}
+              />
+            </div>
+          </div>
+
+          <div className="relative h-60 mb-1.5">
+            <Image
+              src="/image11.jpg"
+              alt="image"
+              className="object-cover"
+              fill={true}
+            />
+          </div>
+
+          <div className="flex gap-1.5 mb-1.5">
+            <div className="relative h-72 w-full">
+              <Image
+                src="/image14.jpg"
+                alt="image"
+                className="object-cover"
+                fill={true}
+              />
+            </div>
+            <div className="relative h-72 w-full">
+              <Image
+                src="/image15.jpg"
+                alt="image"
+                className="object-cover"
+                fill={true}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

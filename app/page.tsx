@@ -1,18 +1,14 @@
 import Countdown from "@/components/Countdown";
+import Footer from "@/components/Footer";
+import HomeBanner from "@/components/HomeBanner";
 import MasonryLayout from "@/components/MasonryLayout";
 import TimeLine from "@/components/TimeLine";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="relative max-w-3xl pt-10 mx-auto bg-[#f0f1ec]">
-      <div className="text-center font-bold text-4xl text-[#800020] mb-5">
-        Nhà có hỷ
-      </div>
-
-      <div className="text-center text-3xl  font-semibold text-[#5A0F1B]">
-        Minh Hoàng - Mai Phương
-      </div>
+    <div className="relative max-w-3xl mx-auto bg-[#f0f1ec]">
+      <HomeBanner />
 
       <div className="flex justify-center mb-8 relative h-50 items-center">
         <Image
@@ -25,19 +21,7 @@ export default function Home() {
 
         <div className="flex absolute z-[1px] flex-col gap-1 items-center">
           <div className="text-xl">Chủ Nhật - 11h30</div>
-          <div className="text-2xl text-[#5A0F1B] font-semibold">
-            21.12.2025
-          </div>
         </div>
-      </div>
-
-      <div className="relative h-[750px] mb-15">
-        <Image
-          src="/banner.jpeg"
-          alt="banner"
-          className="object-cover"
-          fill={true}
-        />
       </div>
 
       <div className="flex justify-center mb-20 items-center">
@@ -119,11 +103,6 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="mt-10 text-lg font-semibold">
-        <div className="text-center">Thank you!</div>
-        <div className="text-center">Rất hân hạnh được đón tiếp</div>
-      </div>
-
       <div className="w-9 h-9 flex items-center sticky justify-center overflow-hidden rounded-full bottom-4 left-3 bg-[#727e5f] animate-spin">
         <Image
           src="/music-note-sparkle.png"
@@ -132,6 +111,10 @@ export default function Home() {
           height={24}
         />
       </div>
+
+      <Footer />
     </div>
   );
 }
+// text-[#800020]
+// text-[#5A0F1B]
