@@ -10,15 +10,35 @@ export default function Home() {
     <div className="relative max-w-3xl mx-auto bg-[#f0f1ec]">
       <HomeBanner />
 
-      <div className="flex justify-center mb-8 relative h-50 items-center">
+      <div className="text-center py-4 mb-3">
+        <div className="font-bold text-lg">Quý khách thân mến</div>
+        <div className="mb-2">
+          Khoảnh khắc thiêng liêng nhất cuộc đời chúng tôi
+        </div>
+        <div className="w-[65%] mx-auto h-px bg-black"></div>
+      </div>
+
+      <div className="font-medium text-center mb-5">
+        <div className="font-semibold">Trân trọng kính mời</div>
+        <div className="mb-8">Bạn và gia đình tới dự lễ cưới của</div>
+        <div className="font-semibold text-2xl">Minh Hoàng & Mai Phương</div>
+      </div>
+
+      <div className="relative h-[350px] mb-10 before:absolute before:bg-black/45 text-white before:inset-0 before:z-1">
         <Image
-          src="/flower.png"
+          src="/banner1.jpg"
           alt="banner"
-          className="absolute left-0"
-          height={300}
-          width={150}
+          className="object-cover"
+          fill={true}
         />
 
+        <div className="absolute z-2 inset-0 text-center">
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <div className="flex justify-center mb-8 relative h-50 items-center">
         <div className="flex absolute z-[1px] flex-col gap-1 items-center">
           <div className="text-xl">Chủ Nhật - 11h30</div>
         </div>
@@ -39,29 +59,6 @@ export default function Home() {
           <div>Bà: Phương Thị Ngọc</div>
         </div>
       </div>
-
-      <div className="flex flex-col items-center mb-10">
-        <div className="mb-6">Trân trọng thông báo LỄ THÀNH HÔN của</div>
-
-        <div className="flex flex-col gap-1 text-2xl text-[#800020] font-semibold items-center">
-          <div>Minh Hoàng</div>
-          <div>&</div>
-          <div>Mai Phương</div>
-        </div>
-      </div>
-
-      <div className="relative h-[350px] mb-10">
-        <Image
-          src="/banner1.jpg"
-          alt="banner"
-          className="object-cover"
-          fill={true}
-        />
-      </div>
-
-      <div className="text-center">Trân trọng kính mời</div>
-      <div className="text-center mb-2">Gia đình</div>
-      <hr className="w-[300px] mx-auto mb-10" />
 
       <TimeLine />
 

@@ -11,7 +11,7 @@ const HomeBanner: React.FC = () => {
       />
 
       <div className="absolute z-2 inset-0 flex flex-col items-center justify-end pb-12">
-        <div className="font-bold text-4xl mb-12">Nhà có hỷ</div>
+        <div className="font-bold text-4xl mb-16">Nhà có hỷ</div>
 
         <div className="text-sm mb-3 text-white font-semibold">
           Ngày 21 Tháng 12 Năm 2025
