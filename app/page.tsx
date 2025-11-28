@@ -1,16 +1,31 @@
+"use client";
+
 import Countdown from "@/components/Countdown";
 import Footer from "@/components/Footer";
 import HomeBanner from "@/components/HomeBanner";
 import MasonryLayout from "@/components/MasonryLayout";
 import TimeLine from "@/components/TimeLine";
+import { Button } from "antd";
 import Image from "next/image";
 
 export default function Home() {
+  const openGoogleMap1 = () => {
+    window.open(
+      "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d479.95282885691955!2d105.39181687825334!3d21.124223082340084!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134618b262512fb%3A0x4beff3487c6ec096!2zTFBCYW5rIFThuqNuIEzEqW5o!5e0!3m2!1svi!2s!4v1763400568528!5m2!1svi!2s"
+    );
+  };
+
+  const openGoogleMap2 = () => {
+    window.open(
+      "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d479.95282885691955!2d105.39181687825334!3d21.124223082340084!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134618b262512fb%3A0x4beff3487c6ec096!2zTFBCYW5rIFThuqNuIEzEqW5o!5e0!3m2!1svi!2s!4v1763400568528!5m2!1svi!2s"
+    );
+  };
+
   return (
-    <div className="relative max-w-3xl mx-auto bg-[#f0f1ec]">
+    <div className="max-w-3xl mx-auto bg-[#f0f1ec]">
       <HomeBanner />
 
-      <div className="text-center py-4 mb-3">
+      <div className="text-center py-4 mb-4">
         <div className="font-bold text-lg">Quý khách thân mến</div>
         <div className="mb-2">
           Khoảnh khắc thiêng liêng nhất cuộc đời chúng tôi
@@ -19,12 +34,12 @@ export default function Home() {
       </div>
 
       <div className="font-medium text-center mb-5">
-        <div className="font-semibold">Trân trọng kính mời</div>
-        <div className="mb-8">Bạn và gia đình tới dự lễ cưới của</div>
-        <div className="font-semibold text-2xl">Minh Hoàng & Mai Phương</div>
+        <div className="font-semibold text-xl">Trân trọng kính mời</div>
+        <div className="mb-8">Bạn và gia đình tới dự lễ thành hôn của</div>
+        <div className="font-semibold text-[26px]">Minh Hoàng & Mai Phương</div>
       </div>
 
-      <div className="relative h-[350px] mb-10 before:absolute before:bg-black/45 text-white before:inset-0 before:z-1">
+      <div className="relative h-[435px] mb-10 before:absolute before:bg-black/50 text-white before:inset-0 before:z-1">
         <Image
           src="/banner1.jpg"
           alt="banner"
@@ -32,19 +47,27 @@ export default function Home() {
           fill={true}
         />
 
-        <div className="absolute z-2 inset-0 text-center">
-          <div></div>
-          <div></div>
+        <div className="absolute z-2 inset-0 text-center py-8">
+          <div className="font-semibold text-lg">Địa điểm</div>
+          <div className="w-0.5 bg-white h-14 mx-auto my-4"></div>
+
+          <div className="flex flex-col gap-1.5">
+            <div className="font-semibold">
+              Trung tâm tiệc cưới & Hội Nghị Seasons
+            </div>
+            <div className="">Tầng 2, Tháp VCCI Tower</div>
+            <div className="">9 Đào Duy Anh - Đống Đa - Hà Nội</div>
+          </div>
+          <div className="w-0.5 bg-white h-14 mx-auto my-4"></div>
+
+          <div className="flex flex-col gap-1.5">
+            <div className="font-semibold">Chủ Nhật - 11h30</div>
+            <div>Ngày 21 Tháng 12 Năm 2025</div>
+          </div>
         </div>
       </div>
 
-      <div className="flex justify-center mb-8 relative h-50 items-center">
-        <div className="flex absolute z-[1px] flex-col gap-1 items-center">
-          <div className="text-xl">Chủ Nhật - 11h30</div>
-        </div>
-      </div>
-
-      <div className="flex justify-center mb-20 items-center">
+      {/* <div className="flex justify-center mb-20 items-center">
         <div className="px-6 text-right">
           <div>NHÀ TRAI</div>
           <div className="invisible">Ông:</div>
@@ -58,7 +81,7 @@ export default function Home() {
           <div>Ông: Nguyễn Văn Trọng</div>
           <div>Bà: Phương Thị Ngọc</div>
         </div>
-      </div>
+      </div> */}
 
       <TimeLine />
 
@@ -68,39 +91,23 @@ export default function Home() {
 
       <MasonryLayout />
 
-      <div className="mt-20 md:flex-row flex flex-col gap-8 justify-center">
+      <div className="mt-20 md:flex-row flex gap-10 justify-center mb-10">
         <div>
           <div className="text-center text-lg mb-1">Nhà trai</div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.599167116449!2d105.83530747541789!3d21.008698780635576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ad0038489635%3A0xd4326cffd4eb28b4!2sVCCI%20Tower!5e0!3m2!1svi!2s!4v1763399737310!5m2!1svi!2s"
-            // width="600"
-            // height="450"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="map"
-            className="mx-auto"
-          ></iframe>
+          <Button type="primary" onClick={openGoogleMap1}>
+            Xem bản đồ
+          </Button>
         </div>
 
         <div>
           <div className="text-center  text-lg mb-1">Nhà gái</div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d479.95282885691955!2d105.39181687825334!3d21.124223082340084!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134618b262512fb%3A0x4beff3487c6ec096!2zTFBCYW5rIFThuqNuIEzEqW5o!5e0!3m2!1svi!2s!4v1763400568528!5m2!1svi!2s"
-            // width="600"
-            // height="450"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="map1"
-            className="mx-auto"
-          ></iframe>
+          <Button type="primary" onClick={openGoogleMap2}>
+            Xem bản đồ
+          </Button>
         </div>
       </div>
 
-      <div className="w-9 h-9 flex items-center sticky justify-center overflow-hidden rounded-full bottom-4 left-3 bg-[#727e5f] animate-spin">
+      <div className="w-9 h-9 z-20 flex items-center fixed justify-center overflow-hidden rounded-full bottom-4 left-3 bg-[#727e5f] animate-spin">
         <Image
           src="/music-note-sparkle.png"
           alt="banner"
