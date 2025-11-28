@@ -39,7 +39,7 @@ export default function Home() {
         <div className="font-semibold text-[26px]">Minh Hoàng & Mai Phương</div>
       </div>
 
-      <div className="relative h-[435px] mb-10 before:absolute before:bg-black/50 text-white before:inset-0 before:z-1">
+      <div className="relative h-[435px] mb-9 before:absolute before:bg-black/50 text-white before:inset-0 before:z-1">
         <Image
           src="/banner1.jpg"
           alt="banner"
@@ -67,6 +67,10 @@ export default function Home() {
         </div>
       </div>
 
+      <div className="mb-10 mt-8">
+        <Countdown />
+      </div>
+
       {/* <div className="flex justify-center mb-20 items-center">
         <div className="px-6 text-right">
           <div>NHÀ TRAI</div>
@@ -83,15 +87,13 @@ export default function Home() {
         </div>
       </div> */}
 
-      <TimeLine />
-
-      <div className="mb-10 mt-8">
-        <Countdown />
+      <div className="mb-10">
+        <TimeLine />
       </div>
 
       <MasonryLayout />
 
-      <div className="mt-20 md:flex-row flex gap-10 justify-center mb-10">
+      <div className="mt-20 md:flex-row flex gap-12 justify-center mb-10">
         <div>
           <div className="text-center text-lg mb-1">Nhà trai</div>
           <Button type="primary" onClick={openGoogleMap1}>

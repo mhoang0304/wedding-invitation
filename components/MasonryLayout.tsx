@@ -4,6 +4,8 @@ import Image from "next/image";
 const MasonryLayout = () => {
   return (
     <div>
+      <div className="font-semibold text-xl px-6 mb-3">Album ảnh cưới</div>
+
       <div className="grid grid-cols-7 gap-x-1.5">
         <div className="col-span-4">
           {leftImage.map((image) => (
