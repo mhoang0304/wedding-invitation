@@ -1,22 +1,22 @@
 export const leftImage = [
   {
     id: 1,
-    src: "/image1.jpg",
+    src: "/TAW00424.JPG",
     height: 365,
   },
   {
     id: 2,
-    src: "/image2.jpg",
+    src: "/TAW01102.JPG",
     height: 350,
   },
   {
     id: 3,
-    src: "/image3.jpg",
+    src: "/TAW01018.JPG",
     height: 350,
   },
   {
     id: 4,
-    src: "/image4.jpg",
+    src: "/TAW00146.JPG",
     height: 360,
   },
 ];
@@ -24,27 +24,27 @@ export const leftImage = [
 export const rightImage = [
   {
     id: 5,
-    src: "/image5.jpg",
+    src: "/TAW01367.JPG",
     height: 260,
   },
   {
     id: 6,
-    src: "/image6.jpg",
+    src: "/TAW00632.JPG",
     height: 280,
   },
   {
     id: 7,
-    src: "/image7.jpg",
+    src: "/TAW00018.JPG",
     height: 300,
   },
   {
     id: 8,
-    src: "/image8.jpg",
+    src: "/TAW01420.JPG",
     height: 280,
   },
   {
     id: 9,
-    src: "/image2.jpg",
+    src: "/TAW00949.JPG",
     height: 300,
   },
 ];

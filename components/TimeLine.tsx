@@ -1,6 +1,6 @@
 const TimeLine: React.FC = () => {
   return (
-    <div className="max-w-[420px] mx-auto py-8 bg-[url(/banner2.jpg)] bg-no-repeat bg-cover px-6 pb-20">
+    <div className="max-w-[420px] mx-auto py-8 bg-[url(/TAW01238.JPG)] bg-no-repeat bg-cover px-6 pb-20">
       <div className="text-center text-2xl font-semibold mb-3 text-white">
         Love Story
       </div>
