@@ -1,48 +1,90 @@
+import Image from "next/image";
+
 const TimeLine: React.FC = () => {
   return (
-    <div className="max-w-[420px] mx-auto py-8 bg-[url(/TAW01238.JPG)] bg-no-repeat bg-cover px-6 pb-20">
-      <div className="text-center text-2xl font-semibold mb-3 text-white">
+    <div className="mx-auto max-w-[420px] bg-[url(/TAW01238.JPG)] bg-cover bg-no-repeat px-6 py-8 pb-20">
+      <div className="mb-3 text-center text-2xl font-semibold text-white">
         Love Story
       </div>
 
       <ul>
-        <li className="relative flex gap-6 pb-5 items-baseline">
+        <li className="relative flex items-baseline gap-6 pb-5">
           <div className="before:absolute before:left-[5.5px] before:h-full before:w-px before:bg-white">
-            <div className="w-3 h-3 rounded-full bg-white"></div>
+            <div className="h-3 w-3 rounded-full bg-white"></div>
           </div>
           <div className="text-sm text-white">
-            <div className="text-lg">03/2024</div>
-            <div className="mt-2 text-base">Ngày lần đầu gặp</div>
+            <div className="flex items-center gap-2">
+              <div className="relative h-5 w-5">
+                <Image
+                  src="/mess1.png"
+                  className="object-contain"
+                  alt="timeline"
+                  fill={true}
+                />
+              </div>
+              <div className="text-base font-semibold">06/2024</div>
+            </div>
+            <div className="mt-2 text-sm">Ngày lần đầu nhắn tin</div>
           </div>
         </li>
 
-        <li className="relative flex gap-6 pb-5 items-baseline">
+        <li className="relative flex items-baseline gap-6 pb-5">
           <div className="before:absolute before:left-[5.5px] before:h-full before:w-px before:bg-white">
-            <div className="w-3 h-3 rounded-full bg-white"></div>
+            <div className="h-3 w-3 rounded-full bg-white"></div>
           </div>
           <div className="text-sm text-white">
-            <div className="text-lg">04/2024</div>
-            <div className="mt-2 text-base">Ngày hẹn hò</div>
+            <div className="flex items-center gap-2">
+              <div className="relative h-5 w-5">
+                <Image
+                  src="/heart.png"
+                  className="object-cover"
+                  alt="timeline"
+                  fill={true}
+                />
+              </div>
+              <div className="text-base font-semibold">10/2024</div>
+            </div>
+            <div className="mt-2 text-sm">Ngày hẹn hò</div>
           </div>
         </li>
 
-        <li className="relative flex gap-6 pb-5 items-baseline">
+        <li className="relative flex items-baseline gap-6 pb-5">
           <div className="before:absolute before:left-[5.5px] before:h-full before:w-px before:bg-white">
-            <div className="w-3 h-3 rounded-full bg-white"></div>
+            <div className="h-3 w-3 rounded-full bg-white"></div>
           </div>
           <div className="text-sm text-white">
-            <div className="text-lg">05/2024</div>
-            <div className="mt-2 text-base">Đính hôn</div>
+            <div className="flex items-center gap-2">
+              <div className="relative h-5 w-5">
+                <Image
+                  src="/note.png"
+                  className="object-cover"
+                  alt="timeline"
+                  fill={true}
+                />
+              </div>
+              <div className="text-base font-semibold">11/2024</div>
+            </div>
+            <div className="mt-2 text-sm">Đính hôn</div>
           </div>
         </li>
 
-        <li className="relative flex gap-6 pb-1 items-baseline">
+        <li className="relative flex items-baseline gap-6 pb-1">
           <div className="before:absolute before:left-[5.5px] before:h-full before:w-px before:bg-white">
-            <div className="w-3 h-3 rounded-full bg-white"></div>
+            <div className="h-3 w-3 rounded-full bg-white"></div>
           </div>
           <div className="text-sm text-white">
-            <div className="text-lg">06/2024</div>
-            <div className="mt-2 text-base">Thành hôn</div>
+            <div className="flex items-center gap-2">
+              <div className="relative h-5 w-5">
+                <Image
+                  src="/ring-wedding.png"
+                  className="object-contain"
+                  alt="timeline"
+                  fill={true}
+                />
+              </div>
+              <div className="text-base font-semibold">12/2024</div>
+            </div>
+            <div className="mt-2 text-sm">Thành hôn</div>
           </div>
         </li>
       </ul>

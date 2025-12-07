@@ -2,13 +2,13 @@
 
 import { useAudio } from "@/hooks/useAudio";
 import { useAutoScroll } from "@/hooks/useScroll";
+import "@/style/main.css";
 import clsx from "clsx";
 import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import Image from "next/image";
 import { useRef, useState } from "react";
 import Audio from "./Audio";
-import "@/style/main.css";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollToPlugin);
@@ -94,16 +94,19 @@ const CurtainReveal = ({ children }: { children: React.ReactNode }) => {
       />
       {!isOpened && (
         <div className="absolute inset-0 z-50 flex cursor-pointer items-center justify-center">
-          <div className="flex flex-col" onClick={handleOpen}>
-            <div className="relative h-24 w-24">
+          <div
+            className="flex flex-col items-center gap-2"
+            onClick={handleOpen}
+          >
+            <div className="relative h-20 w-20 pl-0.5">
               <Image
-                src="/button-open.png"
-                className="object-cover"
+                src="/btn-open.png"
+                className="left-0.5! object-cover"
                 alt="button-open"
                 fill={true}
               />
             </div>
-            <div className="gold-text pl-1 text-lg font-bold">Thiệp Mời</div>
+            <div className="gold-text text-lg font-bold">Thiệp Mời</div>
           </div>
         </div>
       )}

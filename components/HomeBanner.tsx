@@ -1,18 +1,21 @@
+import "@/style/main.css";
 import Image from "next/image";
 
 const HomeBanner: React.FC = () => {
   return (
-    <div className="relative h-[80vh] text-white before:absolute before:inset-0 before:z-1 before:bg-black/35">
+    <div className="relative h-[80vh] text-white before:absolute before:inset-0 before:z-1 before:bg-black/15">
       <Image
-        src="/TAW01147.JPG"
+        src="/TAW00351.JPG"
         alt="banner"
         className="object-cover"
         fill={true}
       />
 
-      <div className="absolute inset-0 z-2 flex flex-col items-center justify-end pb-12">
-        <div className="font-dancing mb-16 text-4xl font-bold">Nhà có hỷ</div>
+      <div className="font-dancing gold-text absolute inset-0 top-10 flex justify-center text-5xl font-bold text-white text-shadow-lg">
+        Nhà có hỷ
+      </div>
 
+      <div className="absolute inset-0 z-2 flex flex-col items-center justify-end pb-4">
         <div className="mb-3 text-sm font-semibold text-white">
           Ngày 21 Tháng 12 Năm 2025
         </div>
