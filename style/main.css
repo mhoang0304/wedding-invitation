@@ -1,0 +1,23 @@
+.gold-text {
+  background: linear-gradient(
+    45deg,
+    #f9e3a1,
+    #eda70a,
+    #ffcc4d,
+    #eda70a,
+    #f9e3a1
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: goldMove 4s infinite linear;
+  background-size: 300%;
+}
+
+@keyframes goldMove {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 300%;
+  }
+}

@@ -2,12 +2,13 @@
 
 import { useAudio } from "@/hooks/useAudio";
 import { useAutoScroll } from "@/hooks/useScroll";
-import { Button } from "antd";
 import clsx from "clsx";
 import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import Image from "next/image";
 import { useRef, useState } from "react";
 import Audio from "./Audio";
+import "@/style/main.css";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollToPlugin);
@@ -92,14 +93,18 @@ const CurtainReveal = ({ children }: { children: React.ReactNode }) => {
         className="absolute top-0 right-0 z-50 h-full w-1/2 bg-[#5A0F1B]"
       />
       {!isOpened && (
-        <div className="absolute inset-0 z-50 flex items-center justify-center">
-          <Button
-            ref={btnRef}
-            onClick={handleOpen}
-            className="rounded-full bg-white px-6 py-3 text-lg font-semibold text-black shadow-lg transition hover:scale-105"
-          >
-            Thiệp Mời
-          </Button>
+        <div className="absolute inset-0 z-50 flex cursor-pointer items-center justify-center">
+          <div className="flex flex-col" onClick={handleOpen}>
+            <div className="relative h-24 w-24">
+              <Image
+                src="/button-open.png"
+                className="object-cover"
+                alt="button-open"
+                fill={true}
+              />
+            </div>
+            <div className="gold-text pl-1 text-lg font-bold">Thiệp Mời</div>
+          </div>
         </div>
       )}
       <div ref={contentRef} className="h-full w-full opacity-0">

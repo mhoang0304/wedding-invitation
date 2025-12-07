@@ -53,7 +53,7 @@ const ImageReveal: React.FC<ImageRevealProps> = ({
 }) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.7,
+    threshold: 0.5,
   });
 
   const variants = getVariants(animationType);
