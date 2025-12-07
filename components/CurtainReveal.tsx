@@ -92,13 +92,15 @@ const CurtainReveal = ({ children }: { children: React.ReactNode }) => {
         className="absolute top-0 right-0 z-50 h-full w-1/2 bg-[#5A0F1B]"
       />
       {!isOpened && (
-        <Button
-          ref={btnRef}
-          onClick={handleOpen}
-          className="absolute top-1/2 left-1/2 z-50 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white px-6 py-3 text-lg font-semibold text-black shadow-lg transition hover:scale-105"
-        >
-          Thiệp Mời
-        </Button>
+        <div className="absolute inset-0 z-50 flex items-center justify-center">
+          <Button
+            ref={btnRef}
+            onClick={handleOpen}
+            className="rounded-full bg-white px-6 py-3 text-lg font-semibold text-black shadow-lg transition hover:scale-105"
+          >
+            Thiệp Mời
+          </Button>
+        </div>
       )}
       <div ref={contentRef} className="h-full w-full opacity-0">
         {children}

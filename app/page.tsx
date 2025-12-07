@@ -1,6 +1,5 @@
 "use client";
 
-import Audio from "@/components/Audio";
 import Countdown from "@/components/Countdown";
 import Footer from "@/components/Footer";
 import HomeBanner from "@/components/HomeBanner";
