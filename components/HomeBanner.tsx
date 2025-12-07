@@ -11,14 +11,14 @@ const HomeBanner: React.FC = () => {
         fill={true}
       />
 
-      <div className="font-dancing gold-text absolute inset-0 top-10 flex justify-center text-5xl font-bold text-white text-shadow-lg">
+      <div className="font-dancing gold-text absolute inset-0 top-12 flex justify-center text-5xl font-bold text-white text-shadow-lg">
         Nhà có hỷ
       </div>
 
       <div className="absolute inset-0 z-2 flex flex-col items-center justify-end pb-4">
-        <div className="mb-3 text-sm font-semibold text-white">
+        {/* <div className="mb-3 text-sm font-semibold text-white">
           Ngày 21 Tháng 12 Năm 2025
-        </div>
+        </div> */}
 
         <div className="font-dancing flex w-full justify-center text-3xl">
           <div>Minh Hoàng</div>

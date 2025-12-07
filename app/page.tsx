@@ -24,20 +24,29 @@ export default function Home() {
   return (
     <div className="mx-auto max-w-3xl bg-[#f0f1ec]">
       <HomeBanner />
-
-      <div className="mb-4 py-4 text-center">
+      {/* 
+      <div className="pt-4 text-center">
         <div className="text-lg font-bold">Quý khách thân mến</div>
         <div className="mb-2">
           Khoảnh khắc thiêng liêng nhất cuộc đời chúng tôi
         </div>
         <div className="mx-auto h-px w-[65%] bg-black"></div>
+      </div> */}
+
+      <div className="relative mx-2 h-[274px]">
+        <Image
+          src="/wedding-calendar-day.png"
+          alt="banner"
+          className="object-contain"
+          fill={true}
+        />
       </div>
 
-      <div className="mb-5 text-center font-medium">
+      {/* <div className="mb-5 text-center font-medium">
         <div className="text-xl font-semibold">Trân trọng kính mời</div>
         <div className="mb-8">Bạn và gia đình tới dự lễ thành hôn của</div>
         <div className="text-[26px] font-semibold">Minh Hoàng & Mai Phương</div>
-      </div>
+      </div> */}
 
       <div className="relative mb-9 h-[535px] text-white before:absolute before:inset-0 before:z-1 before:bg-black/50">
         <Image
