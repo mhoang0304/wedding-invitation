@@ -6,9 +6,10 @@ import "@/style/main.css";
 
 export default function HeartRain() {
   const createFallingHeart = () => {
-    const heart = document.createElement("div");
+    const heart = document.createElement("img");
     heart.className = "falling-heart";
-    heart.innerHTML = "❤️"; // icon trái tim
+    heart.src = "/heart1.png"; // ảnh của bạn
+    heart.alt = "heart";
 
     // random vị trí ngang
     const startLeft = Math.random() * window.innerWidth;
@@ -20,7 +21,7 @@ export default function HeartRain() {
     gsap.to(heart, {
       y: window.innerHeight + 100,
       x: startLeft + (Math.random() * 200 - 100), // lắc trái phải
-      duration: 4 + Math.random() * 2, // random tốc độ rơi
+      duration: 6 + Math.random() * 2, // random tốc độ rơi
       ease: "power1.out",
       opacity: 0,
       onComplete: () => heart.remove(),

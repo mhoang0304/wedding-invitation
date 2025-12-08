@@ -29,4 +29,6 @@
   pointer-events: none;
   user-select: none;
   z-index: 9999;
+  width: 30px;
+  height: auto;
 }
