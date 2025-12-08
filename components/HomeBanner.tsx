@@ -15,12 +15,12 @@ const HomeBanner: React.FC = () => {
         Nhà có hỷ
       </div>
 
-      <div className="absolute inset-0 z-2 flex flex-col items-center justify-end pb-4">
+      <div className="absolute inset-0 z-2 flex flex-col items-center justify-end pb-3">
         {/* <div className="mb-3 text-sm font-semibold text-white">
           Ngày 21 Tháng 12 Năm 2025
         </div> */}
 
-        <div className="font-dancing flex w-full justify-center text-3xl">
+        <div className="font-dancing flex w-full justify-center text-3xl font-semibold">
           <div>Minh Hoàng</div>
           <div className="mx-4">&</div>
           <div>Mai Phương</div>

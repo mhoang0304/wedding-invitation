@@ -42,3 +42,7 @@ export const useCountdown = () => {
 
   return time;
 };
+
+export const formatToTwoDigits = (value: string | number) => {
+  return Number(value) < 0 ? "00" : String(value).padStart(2, "0");
+};

@@ -21,3 +21,12 @@
     background-position: 300%;
   }
 }
+
+.falling-heart {
+  position: fixed;
+  top: -40px;
+  font-size: 28px;
+  pointer-events: none;
+  user-select: none;
+  z-index: 9999;
+}

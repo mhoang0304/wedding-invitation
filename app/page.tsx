@@ -1,6 +1,5 @@
 "use client";
 
-import Countdown from "@/components/Countdown";
 import Footer from "@/components/Footer";
 import HomeBanner from "@/components/HomeBanner";
 import MasonryLayout from "@/components/MasonryLayout";
@@ -24,8 +23,8 @@ export default function Home() {
   return (
     <div className="mx-auto max-w-3xl bg-[#f0f1ec]">
       <HomeBanner />
-      {/* 
-      <div className="pt-4 text-center">
+
+      {/* <div className="pt-4 text-center">
         <div className="text-lg font-bold">Quý khách thân mến</div>
         <div className="mb-2">
           Khoảnh khắc thiêng liêng nhất cuộc đời chúng tôi
@@ -33,7 +32,15 @@ export default function Home() {
         <div className="mx-auto h-px w-[65%] bg-black"></div>
       </div> */}
 
-      <div className="relative mx-2 h-[274px]">
+      <div className="pt-4 text-center">
+        <div className="text-2xl font-bold">The day of love</div>
+        {/* <div className="mb-2 font-semibold">
+          Bạn và gia đình tới dự lễ thành hôn
+        </div>
+        <div className="mx-auto h-px w-[45%] bg-black"></div> */}
+      </div>
+
+      <div className="relative mx-4 mb-10 h-[274px]">
         <Image
           src="/wedding-calendar-day.png"
           alt="banner"
@@ -41,12 +48,55 @@ export default function Home() {
           fill={true}
         />
       </div>
+      <div className="mb-4 text-center text-xl font-semibold">
+        SAVE THE DATE
+      </div>
 
-      {/* <div className="mb-5 text-center font-medium">
-        <div className="text-xl font-semibold">Trân trọng kính mời</div>
-        <div className="mb-8">Bạn và gia đình tới dự lễ thành hôn của</div>
-        <div className="text-[26px] font-semibold">Minh Hoàng & Mai Phương</div>
-      </div> */}
+      <div className="relative mb-8 h-[460px]">
+        <Image
+          src="/TAW01076.JPG"
+          alt="cover"
+          className="object-cover"
+          fill={true}
+        />
+      </div>
+
+      <div className="relative mb-10 h-[460px]">
+        <Image
+          src="/TAW01060.JPG"
+          className="object-cover"
+          alt="cover"
+          fill={true}
+        />
+      </div>
+
+      <div className="mb-5 flex justify-center gap-2">
+        <div className="text-center">
+          <div className="font-semibold">Nhà Trai</div>
+
+          <div>
+            <div>Bà. Nguyễn T. Thanh Xuân</div>
+          </div>
+        </div>
+
+        <div className="text-center">
+          <div className="font-semibold">Nhà gái</div>
+
+          <div>
+            <div>Ông. Nguyễn Văn Trọng</div>
+            <div>Bà. Phương Thị Ngọc</div>
+          </div>
+        </div>
+      </div>
+
+      <div className="mb-5 text-center font-medium">
+        <div className="mb-2 text-xl font-semibold">
+          Thân mời bạn đến dự lễ thành hôn của
+        </div>
+        <div className="font-dancing text-[26px] font-semibold">
+          Minh Hoàng & Mai Phương
+        </div>
+      </div>
 
       <div className="relative mb-9 h-[535px] text-white before:absolute before:inset-0 before:z-1 before:bg-black/50">
         <Image
@@ -75,14 +125,11 @@ export default function Home() {
           </div>
           <div className="mx-auto my-4 h-14 w-0.5 bg-white"></div>
 
+          <div>Trân Trọng Kính Mời</div>
           <Button color="default" variant="solid" onClick={openGoogleMap1}>
             Xem địa chỉ
           </Button>
         </div>
-      </div>
-
-      <div className="mt-8 mb-10">
-        <Countdown />
       </div>
 
       <div className="mb-10">

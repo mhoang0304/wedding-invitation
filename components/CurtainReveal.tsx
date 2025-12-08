@@ -9,6 +9,7 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import Image from "next/image";
 import { useRef, useState } from "react";
 import Audio from "./Audio";
+import HeartRain from "./HeartRain";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollToPlugin);
@@ -98,7 +99,7 @@ const CurtainReveal = ({ children }: { children: React.ReactNode }) => {
             className="flex flex-col items-center gap-2"
             onClick={handleOpen}
           >
-            <div className="relative h-20 w-20 pl-0.5">
+            <div className="relative h-24 w-24">
               <Image
                 src="/btn-open.png"
                 className="left-0.5! object-cover"
@@ -106,13 +107,15 @@ const CurtainReveal = ({ children }: { children: React.ReactNode }) => {
                 fill={true}
               />
             </div>
-            <div className="gold-text text-lg font-bold">Thiệp Mời</div>
+            <div className="gold-text text-xl font-bold">Thiệp Mời</div>
           </div>
         </div>
       )}
       <div ref={contentRef} className="h-full w-full opacity-0">
         {children}
       </div>
+
+      {isOpened && <HeartRain />}
 
       <Audio isPlaying={isPlaying} handleAudio={handleAudio} />
     </div>
