@@ -6,7 +6,6 @@ import MasonryLayout from "@/components/MasonryLayout";
 import TimeLine from "@/components/TimeLine";
 import { Button, Divider } from "antd";
 import Image from "next/image";
-import IconLocation from "@/public/location.svg";
 
 export default function Home() {
   const openGoogleMap1 = () => {
@@ -128,14 +127,14 @@ export default function Home() {
 
       <div className="mb-8 px-4">
         <div className="w-[265px]">
-          <div className="font-dancing mb-1 text-center text-[21px]">
+          <div className="font-dancing mb-1 text-center text-[22px]">
             Cô dâu
           </div>
-          <div className="relative mb-1 h-[205px] w-full">
+          <div className="relative mb-1 h-[245px] w-full">
             <Image
-              src="/TAW01076.JPG"
+              src="/TAW00036.JPG"
               alt="cover"
-              className="object-cover"
+              className="object-cover object-[50%_-40px]"
               fill={true}
             />
           </div>
@@ -143,12 +142,12 @@ export default function Home() {
         <div className="text-right text-[22px]">MAI PHƯƠNG</div>
 
         <div className="mt-4 ml-auto w-[265px]">
-          <div className="font-dancing mb-1 text-center text-[21px]">
+          <div className="font-dancing mb-1 text-center text-[22px]">
             Chú rể
           </div>
-          <div className="relative mb-1 h-[200px] w-full">
+          <div className="relative mb-1 h-[245px] w-full">
             <Image
-              src="/TAW01060.JPG"
+              src="/TAW00424.JPG"
               alt="cover"
               className="object-cover"
               fill={true}

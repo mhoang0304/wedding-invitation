@@ -11,6 +11,7 @@ interface ImageRevealProps {
   height: number;
   className?: string;
   animationType?: AnimationType;
+  classImage?: string;
 }
 
 const getVariants = (type: AnimationType): Variants => {
@@ -50,6 +51,7 @@ const ImageReveal: React.FC<ImageRevealProps> = ({
   height,
   className,
   animationType = "slideUp",
+  classImage = "",
 }) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
@@ -70,7 +72,7 @@ const ImageReveal: React.FC<ImageRevealProps> = ({
       <Image
         src={src}
         alt={alt}
-        className="object-cover"
+        className={`object-cover ${classImage}`}
         fill={true}
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
       />

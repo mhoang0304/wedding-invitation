@@ -42,7 +42,7 @@ export const useAutoScroll = () => {
     };
 
     scrollTweenRef.current = gsap.to(window, {
-      duration: 80,
+      duration: 105,
       scrollTo: { y: maxScroll, autoKill: false },
       ease: "linear",
     });

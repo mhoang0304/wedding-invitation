@@ -33,7 +33,7 @@ const CurtainReveal = ({ children }: { children: React.ReactNode }) => {
     setIsOpened(true);
     setTimeout(() => {
       setShowHeart(true);
-    }, 3000);
+    }, 2500);
 
     const tl = gsap.timeline({
       onComplete: () => {

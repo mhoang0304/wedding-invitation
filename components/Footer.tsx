@@ -4,16 +4,16 @@ import Countdown from "./Countdown";
 const Footer: React.FC = () => {
   return (
     <div className="relative mt-4 w-full before:absolute before:inset-0 before:z-1 before:bg-black/10">
-      <div className="h-[315px]">
+      <div className="h-[355px]">
         <Image
-          src="/TAW00457.JPG"
+          src="/TAW00223.JPG"
           alt="banner"
           className="object-cover"
           fill={true}
         />
       </div>
 
-      <div className="absolute bottom-6 z-2 w-full bg-black/45 pt-4 pb-3 text-white">
+      <div className="absolute bottom-11 z-2 w-full bg-black/45 pt-4 pb-3 text-white">
         <Countdown />
 
         <div className="mb-3 px-3 text-center text-sm">

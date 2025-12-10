@@ -2,12 +2,8 @@ import Image from "next/image";
 
 const TimeLine: React.FC = () => {
   return (
-    <div className="mx-auto max-w-[420px] bg-[url(/TAW01238.JPG)] bg-cover bg-no-repeat px-6 py-8 pb-20">
-      <div className="mb-3 text-center text-2xl font-semibold text-white">
-        Love Story
-      </div>
-
-      <ul>
+    <div className="relative mx-auto h-[410px] w-full bg-black bg-[url(/TAW01507.JPG)] bg-cover bg-position-[100px_center] bg-no-repeat px-6 pt-16 before:absolute before:inset-0 before:z-1 before:bg-black/35">
+      <ul className="absolute z-1">
         <li className="relative flex items-baseline gap-6 pb-5">
           <div className="before:absolute before:left-[5.5px] before:h-full before:w-px before:bg-white">
             <div className="h-3 w-3 rounded-full bg-white"></div>

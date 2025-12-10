@@ -35,42 +35,44 @@ const MasonryLayout: React.FC = () => {
         <div className="col-span-7">
           <ImageReveal
             src="/TAW01249.JPG"
-            alt="Ảnh cưới lớn 1"
-            height={240}
+            alt="wedding-image"
+            height={285}
             animationType="fadeIn"
+            classImage="object-[center_-100px]"
           />
 
           <div className="mb-1.5 flex gap-1.5">
             <div className="w-full">
               <ImageReveal
-                src="/TAW00531.JPG"
-                alt="Ảnh ngang 1"
-                height={128}
+                src="/TAW00667.JPG"
+                alt="wedding-image"
+                height={145}
                 animationType="slideRight"
               />
             </div>
             <div className="w-full">
               <ImageReveal
-                src="/TAW00667.JPG"
-                alt="Ảnh ngang 2"
-                height={128}
+                src="/TAW00579.JPG"
+                alt="wedding-image"
+                height={145}
                 animationType="slideLeft"
               />
             </div>
           </div>
 
           <ImageReveal
-            src="/TAW00457.JPG"
-            alt="Ảnh cưới lớn 2"
-            height={240}
+            src="/TAW00284.JPG"
+            alt="wedding-image"
+            height={285}
             animationType="fadeIn"
+            classImage="object-[center_-140px]"
           />
 
           <div className="mb-1.5 flex gap-1.5">
             <div className="w-full">
               <ImageReveal
-                src="/TAW01261.JPG"
-                alt="Ảnh dọc 1"
+                src="/TAW01328.JPG"
+                alt="wedding-image"
                 height={288}
                 animationType="slideUp"
               />
@@ -78,7 +80,7 @@ const MasonryLayout: React.FC = () => {
             <div className="w-full">
               <ImageReveal
                 src="/TAW01458.JPG"
-                alt="Ảnh dọc 2"
+                alt="wedding-image"
                 height={288}
                 animationType="slideUp"
               />
