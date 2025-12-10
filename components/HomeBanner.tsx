@@ -20,11 +20,11 @@ const HomeBanner: React.FC = () => {
           Ngày 21 Tháng 12 Năm 2025
         </div> */}
 
-        <div className="font-dancing flex w-full justify-center text-3xl font-semibold">
+        {/* <div className="font-dancing flex w-full justify-center text-3xl font-semibold">
           <div>Minh Hoàng</div>
           <div className="mx-4">&</div>
           <div>Mai Phương</div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -21,7 +21,7 @@ export default function HeartRain() {
     gsap.to(heart, {
       y: window.innerHeight + 100,
       x: startLeft + (Math.random() * 200 - 100), // lắc trái phải
-      duration: 6 + Math.random() * 2, // random tốc độ rơi
+      duration: 18 + Math.random() * 2, // random tốc độ rơi
       ease: "power1.out",
       opacity: 0,
       onComplete: () => heart.remove(),
@@ -32,7 +32,7 @@ export default function HeartRain() {
     // Tạo trái tim mỗi 300ms
     const interval = setInterval(() => {
       createFallingHeart();
-    }, 300);
+    }, 1000);
 
     return () => clearInterval(interval);
   }, []);

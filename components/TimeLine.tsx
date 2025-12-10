@@ -24,7 +24,7 @@ const TimeLine: React.FC = () => {
               </div>
               <div className="text-base font-semibold">06/2024</div>
             </div>
-            <div className="mt-2 text-sm">Ngày lần đầu nhắn tin</div>
+            <div className="mt-2 text-sm">Lần đầu nhắn tin</div>
           </div>
         </li>
 
@@ -62,7 +62,7 @@ const TimeLine: React.FC = () => {
                   fill={true}
                 />
               </div>
-              <div className="text-base font-semibold">11/2024</div>
+              <div className="text-base font-semibold">11/2025</div>
             </div>
             <div className="mt-2 text-sm">Đính hôn</div>
           </div>
@@ -82,7 +82,7 @@ const TimeLine: React.FC = () => {
                   fill={true}
                 />
               </div>
-              <div className="text-base font-semibold">12/2024</div>
+              <div className="text-base font-semibold">12/2025</div>
             </div>
             <div className="mt-2 text-sm">Thành hôn</div>
           </div>

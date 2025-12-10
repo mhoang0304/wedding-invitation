@@ -25,11 +25,15 @@ const CurtainReveal = ({ children }: { children: React.ReactNode }) => {
   const btnRef = useRef<HTMLButtonElement | null>(null);
 
   const [isOpened, setIsOpened] = useState<boolean>(false);
+  const [showHeart, setShowHeart] = useState<boolean>(false);
 
   const handleOpen = () => {
     if (isOpened) return;
 
     setIsOpened(true);
+    setTimeout(() => {
+      setShowHeart(true);
+    }, 3000);
 
     const tl = gsap.timeline({
       onComplete: () => {
@@ -115,7 +119,7 @@ const CurtainReveal = ({ children }: { children: React.ReactNode }) => {
         {children}
       </div>
 
-      {isOpened && <HeartRain />}
+      {showHeart && <HeartRain />}
 
       <Audio isPlaying={isPlaying} handleAudio={handleAudio} />
     </div>
