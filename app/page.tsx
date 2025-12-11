@@ -4,20 +4,27 @@ import Footer from "@/components/Footer";
 import HomeBanner from "@/components/HomeBanner";
 import MasonryLayout from "@/components/MasonryLayout";
 import TimeLine from "@/components/TimeLine";
+import { LOCATION } from "@/helpers/constant";
 import { Button, Divider } from "antd";
 import Image from "next/image";
+import { useSearchParams } from "next/navigation";
 
 export default function Home() {
-  const openGoogleMap1 = () => {
-    window.open(
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.599167116449!2d105.83530747541789!3d21.008698780635576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ad0038489635%3A0xd4326cffd4eb28b4!2sVCCI%20Tower!5e0!3m2!1svi!2s!4v1763399737310!5m2!1svi!2s",
-    );
-  };
+  const searchParams = useSearchParams();
+  const location = searchParams.get("location");
+  const name = searchParams.get("name");
+  console.log(99, name);
 
-  const openGoogleMap2 = () => {
-    window.open(
-      "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d479.95282885691955!2d105.39181687825334!3d21.124223082340084!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134618b262512fb%3A0x4beff3487c6ec096!2zTFBCYW5rIFThuqNuIEzEqW5o!5e0!3m2!1svi!2s!4v1763400568528!5m2!1svi!2s",
-    );
+  const openGoogleMap1 = () => {
+    if (location === LOCATION.HA_NOI) {
+      window.open(
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.599167116449!2d105.83530747541789!3d21.008698780635576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ad0038489635%3A0xd4326cffd4eb28b4!2sVCCI%20Tower!5e0!3m2!1svi!2s!4v1763399737310!5m2!1svi!2s",
+      );
+    } else {
+      window.open(
+        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d479.95282885691955!2d105.39181687825334!3d21.124223082340084!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134618b262512fb%3A0x4beff3487c6ec096!2zTFBCYW5rIFThuqNuIEzEqW5o!5e0!3m2!1svi!2s!4v1763400568528!5m2!1svi!2s",
+      );
+    }
   };
 
   return (
@@ -27,8 +34,13 @@ export default function Home() {
       <div className="px-4">
         <div className="mt-7 mb-6 text-center font-medium">
           <div className="mb-5 text-sm italic">
-            Trân trọng kính mời Quý Khách <br />
-            tới dự bữa tiệc cùng lễ thành hôn của hai chúng tôi
+            <div>
+              Trân trọng kính mời{" "}
+              <div className="inline-block font-semibold">
+                {name ? name.replaceAll("-", " ") : "Quý Khách"}
+              </div>
+            </div>
+            <div> tới dự bữa tiệc cùng lễ thành hôn của hai chúng tôi</div>
           </div>
 
           <div>
@@ -78,21 +90,42 @@ export default function Home() {
           <div className="mx-auto my-2.5 h-14 w-0.5 bg-white"></div>
 
           <div className="flex flex-col gap-1.5">
-            <div className="font-semibold">
-              Trung tâm tiệc cưới & Hội Nghị Seasons
-            </div>
-            <div className="text-sm">Tầng 2, Tháp VCCI Tower</div>
-            <div className="text-sm">9 Đào Duy Anh - Đống Đa - Hà Nội</div>
+            {location === LOCATION.HA_NOI ? (
+              <>
+                <div className="font-semibold">
+                  Trung tâm tiệc cưới & Hội Nghị Seasons
+                </div>
+                <div className="text-sm">Tầng 2, Tháp VCCI Tower</div>
+                <div className="text-sm">9 Đào Duy Anh - Đống Đa - Hà Nội</div>
+              </>
+            ) : (
+              <>
+                <div className="font-semibold">Tư gia nhà gái</div>
+                <div className="text-sm">Số nhà 15, ngõ 3</div>
+                <div className="text-sm">
+                  Thôn Yên Thành, xã Suối Hai, Hà Nội
+                </div>
+              </>
+            )}
           </div>
           <div className="mx-auto my-2.5 h-14 w-0.5 bg-white"></div>
 
           <div className="flex flex-col gap-1.5">
-            <div className="font-semibold">Chủ Nhật - 11h30</div>
-            <div>Ngày 21 Tháng 12 Năm 2025</div>
+            {location === LOCATION.HA_NOI ? (
+              <>
+                <div className="font-semibold">Chủ Nhật - 11h30</div>
+                <div>Ngày 21 Tháng 12 Năm 2025</div>
+              </>
+            ) : (
+              <>
+                <div className="font-semibold">Thứ 7 - 15h30</div>
+                <div>Ngày 20 Tháng 12 Năm 2025</div>
+              </>
+            )}
           </div>
           <div className="mx-auto my-2.5 h-14 w-0.5 bg-white"></div>
 
-          <div className="mb-3">Trân Trọng Kính Mời</div>
+          <div className="mb-3 font-semibold">Trân Trọng Kính Mời</div>
 
           <Button
             icon={

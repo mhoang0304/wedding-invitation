@@ -48,3 +48,8 @@ export const rightImage = [
     height: 300,
   },
 ];
+
+export const LOCATION = {
+  HA_NOI: "1",
+  BA_VI: "2",
+};

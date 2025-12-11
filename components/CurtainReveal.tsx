@@ -10,6 +10,7 @@ import Image from "next/image";
 import { useRef, useState } from "react";
 import Audio from "./Audio";
 import HeartRain from "./HeartRain";
+import { useSearchParams } from "next/navigation";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollToPlugin);
@@ -18,6 +19,8 @@ if (typeof window !== "undefined") {
 const CurtainReveal = ({ children }: { children: React.ReactNode }) => {
   const { startAutoScroll } = useAutoScroll();
   const { isPlaying, play, pause } = useAudio("/mp3/beautiful-in-white.mp3");
+  const searchParams = useSearchParams();
+  const name = searchParams.get("name");
 
   const leftRef = useRef<HTMLDivElement | null>(null);
   const rightRef = useRef<HTMLDivElement | null>(null);
@@ -112,6 +115,13 @@ const CurtainReveal = ({ children }: { children: React.ReactNode }) => {
               />
             </div>
             <div className="gold-text text-xl font-bold">Thiệp Mời</div>
+            {name ? (
+              <div className="gold-text text-lg font-bold">
+                {name.replaceAll("-", " ")}
+              </div>
+            ) : (
+              ""
+            )}
           </div>
         </div>
       )}
