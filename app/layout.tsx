@@ -40,6 +40,7 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+export const dynamic = "force-static";
 
 export default function RootLayout({
   children,

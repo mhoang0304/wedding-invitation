@@ -117,7 +117,7 @@ export default function Home() {
               </>
             ) : (
               <>
-                <div className="font-semibold">Thứ 7 - 15h30</div>
+                <div className="font-semibold">Thứ 7 - 15h00</div>
                 <div>Ngày 20 Tháng 12 Năm 2025</div>
               </>
             )}
