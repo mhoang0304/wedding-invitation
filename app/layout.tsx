@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Dancing_Script } from "next/font/google";
 import "./globals.css";
 import CurtainReveal from "@/components/CurtainReveal";
+import { Suspense } from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -51,7 +52,9 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${dancing.variable}`}
     >
       <body className="antialiased">
-        <CurtainReveal>{children}</CurtainReveal>
+        <Suspense>
+          <CurtainReveal>{children}</CurtainReveal>
+        </Suspense>
       </body>
     </html>
   );
