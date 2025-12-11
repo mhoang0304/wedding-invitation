@@ -13,7 +13,6 @@ export default function Home() {
   const searchParams = useSearchParams();
   const location = searchParams.get("location");
   const name = searchParams.get("name");
-  console.log(99, name);
 
   const openGoogleMap1 = () => {
     if (location === LOCATION.HA_NOI) {
