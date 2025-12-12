@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Wedding Invitation",
     description: "Minh Hoàng & Mai Phương",
-    url: "https://wedding-invitation-12.vercel.app/",
+    url: "https://wedding-invitation-12.vercel.app",
     siteName: "Wedding Invitation",
     images: [
       {
@@ -53,9 +53,9 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${dancing.variable}`}
     >
       <body className="antialiased">
-        <Suspense>
-          <CurtainReveal>{children}</CurtainReveal>
-        </Suspense>
+        {/* <Suspense> */}
+        <CurtainReveal>{children}</CurtainReveal>
+        {/* </Suspense> */}
       </body>
     </html>
   );
