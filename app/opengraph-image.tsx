@@ -10,7 +10,7 @@ export const contentType = "image/png";
 export default function OGImage() {
   return new ImageResponse(
     <img
-      src="https://res.cloudinary.com/djr13cwo7/image/upload/v1765619606/previewv2_ymtnkt.jpg"
+      src="https://wedding-invitation-12.vercel.app/previewv2.jpg"
       width={1200}
       height={630}
       style={{ objectFit: "cover" }}
