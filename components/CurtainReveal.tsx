@@ -11,6 +11,7 @@ import { useRef, useState } from "react";
 import Audio from "./Audio";
 import HeartRain from "./HeartRain";
 import { useSearchParams } from "next/navigation";
+import GiftBox from "./GiftBox";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollToPlugin);
@@ -132,6 +133,7 @@ const CurtainReveal = ({ children }: { children: React.ReactNode }) => {
       {showHeart && <HeartRain />}
 
       <Audio isPlaying={isPlaying} handleAudio={handleAudio} />
+      <GiftBox />
     </div>
   );
 };

@@ -3,7 +3,7 @@ import Countdown from "./Countdown";
 
 const Footer: React.FC = () => {
   return (
-    <div className="relative mt-4 w-full before:absolute before:inset-0 before:z-1 before:bg-black/10">
+    <div className="relative mt-4 w-full">
       <div className="h-[355px]">
         <Image
           src="/TAW00223.JPG"

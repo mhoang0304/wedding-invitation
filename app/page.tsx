@@ -199,5 +199,3 @@ export default function Home() {
     </div>
   );
 }
-// text-[#800020]
-// text-[#5A0F1B]
