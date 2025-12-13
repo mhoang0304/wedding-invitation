@@ -10,7 +10,7 @@ export const contentType = "image/png";
 export default function OGImage() {
   return new ImageResponse(
     <img
-      src="https://wedding-invitation-12.vercel.app/api/og"
+      src="https://wedding-invitation-12.vercel.app/previewv2.jpg"
       width={1200}
       height={630}
       style={{ objectFit: "cover" }}

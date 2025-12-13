@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     siteName: "Wedding Invitation",
     images: [
       {
-        url: "https://wedding-invitation-12.vercel.app/api/og",
+        url: "https://wedding-invitation-12.vercel.app/previewv2.jpg",
         width: 1200,
         height: 630,
         alt: "Wedding Invitation Preview",
@@ -53,9 +53,9 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${dancing.variable}`}
     >
       <body className="antialiased">
-        {/* <Suspense> */}
-        <CurtainReveal>{children}</CurtainReveal>
-        {/* </Suspense> */}
+        <Suspense>
+          <CurtainReveal>{children}</CurtainReveal>
+        </Suspense>
       </body>
     </html>
   );
