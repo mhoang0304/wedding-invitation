@@ -21,7 +21,7 @@ const ModalQr: React.FC<ModalQrProps> = ({ isOpen, closeModalQr }) => {
 
         <div className="relative h-[420px] w-full">
           <Image
-            src={location === LOCATION.BA_VI ? "" : "/qr-1.jpeg"}
+            src={location === LOCATION.BA_VI ? "/qr-2.jpeg" : "/qr-1.jpeg"}
             alt="qr"
             className="object-cover"
             fill={true}
