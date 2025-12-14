@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
     <div className="relative mt-4 w-full">
       <div className="h-[355px]">
         <Image
-          src="/TAW00223.JPG"
+          src="/TAW00223v1.JPG"
           alt="banner"
           className="object-cover"
           fill={true}

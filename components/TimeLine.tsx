@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const TimeLine: React.FC = () => {
   return (
-    <div className="relative mx-auto h-[410px] w-full bg-black bg-[url(/TAW01507.JPG)] bg-cover bg-position-[100px_center] bg-no-repeat px-6 pt-16 before:absolute before:inset-0 before:z-1 before:bg-black/35">
+    <div className="relative mx-auto h-[410px] w-full bg-black bg-[url(/TAW01507v1.JPG)] bg-cover bg-position-[100px_center] bg-no-repeat px-6 pt-16 before:absolute before:inset-0 before:z-1 before:bg-black/35">
       <ul className="absolute z-1">
         <li className="relative flex items-baseline gap-6 pb-5">
           <div className="before:absolute before:left-[5.5px] before:h-full before:w-px before:bg-white">

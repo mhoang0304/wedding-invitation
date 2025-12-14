@@ -34,7 +34,7 @@ const MasonryLayout: React.FC = () => {
 
         <div className="col-span-7">
           <ImageReveal
-            src="/TAW01249.JPG"
+            src="/TAW01249v1.JPG"
             alt="wedding-image"
             height={285}
             animationType="fadeIn"
@@ -44,7 +44,7 @@ const MasonryLayout: React.FC = () => {
           <div className="mb-1.5 flex gap-1.5">
             <div className="w-full">
               <ImageReveal
-                src="/TAW00667.JPG"
+                src="/TAW00667v1.JPG"
                 alt="wedding-image"
                 height={145}
                 animationType="slideRight"
@@ -52,7 +52,7 @@ const MasonryLayout: React.FC = () => {
             </div>
             <div className="w-full">
               <ImageReveal
-                src="/TAW00579.JPG"
+                src="/TAW00579v1.JPG"
                 alt="wedding-image"
                 height={145}
                 animationType="slideLeft"
@@ -61,7 +61,7 @@ const MasonryLayout: React.FC = () => {
           </div>
 
           <ImageReveal
-            src="/TAW00284.JPG"
+            src="/TAW00284v1.JPG"
             alt="wedding-image"
             height={285}
             animationType="fadeIn"
@@ -71,7 +71,7 @@ const MasonryLayout: React.FC = () => {
           <div className="mb-1.5 flex gap-1.5">
             <div className="w-full">
               <ImageReveal
-                src="/TAW01328.JPG"
+                src="/TAW01328v1.JPG"
                 alt="wedding-image"
                 height={288}
                 animationType="slideUp"
@@ -79,7 +79,7 @@ const MasonryLayout: React.FC = () => {
             </div>
             <div className="w-full">
               <ImageReveal
-                src="/TAW01458.JPG"
+                src="/TAW01458v1.JPG"
                 alt="wedding-image"
                 height={288}
                 animationType="slideUp"

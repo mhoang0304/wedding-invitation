@@ -5,7 +5,7 @@ const HomeBanner: React.FC = () => {
   return (
     <div className="relative h-[80vh] text-white">
       <Image
-        src="/TAW00351.JPG"
+        src="/TAW00351v1.JPG"
         alt="banner"
         className="object-cover"
         fill={true}

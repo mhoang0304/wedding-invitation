@@ -27,7 +27,7 @@ export default function Home() {
   };
 
   return (
-    <div className="mx-auto max-w-3xl bg-[#f0f1ec]">
+    <div className="mx-auto max-w-xl bg-[#f0f1ec]">
       <HomeBanner />
 
       <div className="px-4">
@@ -164,7 +164,7 @@ export default function Home() {
           </div>
           <div className="relative mb-1 h-[245px] w-full">
             <Image
-              src="/TAW00036.JPG"
+              src="/TAW00036v1.JPG"
               alt="cover"
               className="object-cover object-[50%_-40px]"
               fill={true}
@@ -179,7 +179,7 @@ export default function Home() {
           </div>
           <div className="relative mb-1 h-[245px] w-full">
             <Image
-              src="/TAW00424.JPG"
+              src="/TAW00424v1.JPG"
               alt="cover"
               className="object-cover"
               fill={true}
